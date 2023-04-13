@@ -8,6 +8,11 @@
 
 {% block content %}
     <div class="d-flex flex-column align-items-center">
-        <h1 class="text-center mb-5">Bienvenue sur l'imprimerie de l'Abbaye Saint-Joseph de Clairval !</h1>
+        <img src={% static 'main/img/blason.png' %} alt="Blason Abbaye" style="width:50px">
+        <h5 class="text-center mb-5">Abbaye</br>Saint-Joseph de Clairval</h5>
+
+        <h1 class="text-center mb-5">Bienvenue sur le site de notre imprimerie !</h1>
+
+        <a class="btn btn-outline-primary btn-sm m-3" href={% url 'main:form' %}>Demander un devis</a>
     </div>
 {% endblock content %}

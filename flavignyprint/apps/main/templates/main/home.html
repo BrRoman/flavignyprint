@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet/less" href={% static 'main/css/home.less' %}>
+{% endblock css %}
+
+{% block content %}
+    <div class="d-flex flex-column align-items-center">
+        <h1 class="text-center mb-5">Bienvenue sur l'imprimerie de l'Abbaye Saint-Joseph de Clairval !</h1>
+    </div>
+{% endblock content %}
